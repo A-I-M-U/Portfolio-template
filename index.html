@@ -1,1 +1,336 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body id="body">
+    <div id="loader">
+        <div id="loding_text">
+             <h1>Loading...</h1>
+        </div>
+     </div>
+    <!--####### Registration ##########-->
+    <div class="registration">
+    
+      <div class="registration_container">
+      <!--####### LOGIN ##########-->
+        <div id="login" class="login">
+         <span id ="registration_heading">Welcome</span>
+          <input type="email" id="email" placeholder="Email"  class="input login-content"/>
+          
+         <input type = "password" id="password" placeholder="Password" class="input login-content"/>
+
+        <button onclick="signup_portal()" class="login__button  login-content">
+        Sign Up/ Registration
+        </button>
+        <button onclick="enter_main_window_login()" class=" login__button login-content">
+        Enter 
+       </button>
+
+       </div>
+       <!--####### LOGIN ##########-->
+       
+       
+        <!--####### Sign-Up ##########-->
+        <div id="sign_up" class="sign_up">
+         <span id ="registration_heading">Welcome</span>
+         <input type = "text" id="username" placeholder="Username" class="input sign-content"/>
+          <input type="email" id="email_signup" placeholder="Email"  class="input sign-content"/>
+          
+         <input type = "password" id="password_signup" placeholder="Password" class="input sign-content"/>
+
+        <button onclick="login_portal()" class="sign__button  sign-content">
+        login
+        </button>
+        <button onclick="enter_main_window_signup()" class=" sign__button sign-content">
+        Enter 
+       </button>
+
+       </div>
+       <!--####### Sign-Up ##########-->
+      </div>
+    </div>
+    <!--####### Registartion ##########-->
+    
+    <!--####### Main-Window ##########-->
+    
+    <div class="main_window" id="main_window">
+    <nav>
+       
+        <div class="burger">
+            <div class="line line-1"></div>
+            <div class="line line-2"></div>
+            <div class="line line-3"></div>
+        </div>
+        <ul class="">
+            <li><a href="#landing__page">Home</a></li>
+            <li><a href="#first__page">About</a></li>
+            <li><a href="#second__page">Blogs</a></li>
+            <li><a href="#third__page">Projects</a></li>
+            <li><a href="#fourth_page">Skills</a></li>
+             <li><a href="#fifth__page">Certificates</a></li>
+             <li><a href="#sixth__page">Languages Known</a></li>
+             <li><a href="#seventh__page">Social</a></li>
+        </ul>
+    </nav>
+        
+  </div>
+ 
+  </div>
+ 
+
+  
+  </div>
+ 
+
+  
+    
+        <!--####### Landing__Page ##########-->
+        <div class="landing__page" id="landing__page">
+      <!--   <div class="landing__header">
+          <h1>Welcome To <br />AKM Solutions</h1>
+         </div>-->
+         
+         <div class="landing__message">
+         
+             <h1>World is <br /> <b id="not">Not</b> Here <br />
+             Why Are you?</h1>
+         </div>
+    
+        </div>
+        <!--####### Landing__Page ##########-->
+       <!--####### First__Page ##########-->
+       <div class="first__page" id="first__page">
+       <div class="intro_heading intro">
+      <h1> About </h1>
+       </div>
+        <div class="profile__image__container intro">
+             <img src="https://api.sololearn.com/Uploads/Avatars/19034561.jpg" class="profile__image"/>
+         </div>                 
+        <div class="profile_image_label">
+            <h1>Atul</h1>
+            <p>A random person</p>
+        </div>
+        
+        <div class="intro_para intro">
+            <p> lorem ipsum dolor sit amet, consectetur adipiscing elit. integer lacinia, risus a fermentum tincidunt, sapien dolor viverra odio, sit amet faucibus risus massa eget felis. in varius, est non mollis feugiat, tortor augue lobortis turpis, non laoreet turpis leo quis ipsum. donec ligula tortor, dapibus et metus eu, commodo posuere magna.  
+            </p>
+        </div>
+
+       </div>
+        <!--####### First__Page ##########-->
+          <!--####### Second__Page ##########-->
+      <div class="second__page" id="second__page">
+      <div class="second_heading">
+        <h1>My Blogs</h1>
+      </div>
+          <div class="blogs">
+          <img src="https://i.ibb.co/yBZdRnc/javascript-node-js-abstract-logo-wallpaper-preview.jpg" alt="javascript-node-js-abstract-logo-wallpaper-preview" class="blog_image" border="0">
+          <div class="blog_content">
+        
+          <p>Javascript : New Frameworks</p>
+         <p><a class="blog_open blog_open_1" onclick="open_blog()">Open Blog</a></p>
+           </div>
+           </div>
+          <div class="blogs">
+          <img src="https://i.ibb.co/yBZdRnc/javascript-node-js-abstract-logo-wallpaper-preview.jpg" alt="javascript-node-js-abstract-logo-wallpaper-preview" class="blog_image" border="0">
+          <div class="blog_content">
+        
+          <p>Javascript : New Frameworks</p>
+         <p><a class="blog_open blog_open_1" onclick="open_blog()">Open Blog</a></p>
+           </div>
+           </div>
+
+
+  </div>        
+        </div>
+      <!--####### Second__Page ##########-->
+        
+    <!--####### third__Page ##########-->
+        <div class="third__page" id="third__page">
+      <div class="third_heading">
+        <h1>My Projects</h1>
+      </div>
+          <div class="projects">
+          <img src="https://i.ibb.co/37mMnzL/beautiful-peacock-4k-3840x2160.jpg" alt="javascript-node-js-abstract-logo-wallpaper-preview" class="project_image" border="0">
+          <div class="project_content">
+        
+          <p>Peacock Bot-multitasking Discord bot</p>
+         <p><a class="project_open project_open_1" onclick="open_project()">Open Project</a></p>
+           </div>
+           </div>
+          <div class="projects">
+          <img src="https://i.ibb.co/37mMnzL/beautiful-peacock-4k-3840x2160.jpg" alt="javascript-node-js-abstract-logo-wallpaper-preview" class="project_image" border="0">
+          <div class="project_content">
+        
+          <p>Peacock Bot-multitasking Discord bot</p>
+         <p><a class="project_open project_open_1" onclick="open_project()">Open Project</a></p>
+           </div>
+           </div>
+
+
+  </div>        
+        </div>
+      <!--####### third__Page ##########-->
+      <!--####### fourth__Page ##########-->
+      <div class="fourth__page" id="fourth_page">
+      <div class="fourth_heading">
+        <h1>My Skills</h1>
+      </div>
+          <div class="container_skills">
+              <span class="skills" id="skill_1">
+              <img src="https://i.ibb.co/JQ05tvX/oDzrGc.jpg" alt="oDzrGc" class="skill_image" border="0">
+                <span id="skill_name">
+                
+                <h3>HTML</h3>
+                    
+                </span>
+              </span>
+              <span class="skills" id="skill_2">
+               <img src="https://i.ibb.co/0hwVHZX/how-to-create-randomly-generated-backgrounds-css-paint-api.png" alt="oDzrGc" class="skill_image" border="0"> 
+                <span id="skill_name">
+                
+                <h3>CSS</h3>
+                    
+                </span>
+              </span>
+              <span class="skills" id="skill_3">
+                 <img src="https://i.ibb.co/SfxjMM3/images.jpg" alt="oDzrGc" class="skill_image" border="0">
+                 <span id="skill_name">               
+                 <h3>Google Search</h3>
+                    
+                </span>
+              </span>
+              
+              <span class="skills" id="skill_4">
+                 <img src="https://i.ibb.co/8cLKFSG/st-small-507x507-pad-600x600-f8f8f8.jpg" alt="oDzrGc" class="skill_image" border="0">
+                 <span id="skill_name">
+                
+                <h4>Stackoverflow use</h4>
+                    
+                </span>
+              </span>
+           
+          </div>
+      </div>
+       <!--####### fourth__Page ##########-->
+       
+          <!--####### fifth__Page ##########-->
+          <div class="fifth__page" id="fifth__page">
+          
+          <div class="fifth_heading">
+           <h1>My Certificates</h1>
+                
+           </div> 
+            <div>
+            
+            <div class="certi_container">
+            <img id="slider" src="https://i.ibb.co/RSDXmQ5/Screenshot-20201230-004312-Chrome.jpg"/>
+            </div>
+            <div class="buttons_certificate">
+            <button class="certificate_button" id="prev" onclick="prev()"> Prev </button>
+            <button class="certificate_button" id="next_button" onclick="next()"> Next </button>
+  </div>
+        </div> 
+
+          </div>
+         <!--####### fifth__Page ##########-->
+         
+        <!--####### sixth__Page ##########-->
+         <div class="sixth__page" id="sixth__page">
+              <div class="sixth_heading">
+             <h1>Languages Known</h1>     
+              </div>
+              <div class="languages_card">
+                      <span class="languages" id="lang_1">
+              <img src="https://i.ibb.co/wpS55v2/Hindi.jpg" alt="oDzrGc" class="language_image" border="0">
+                <span id="lang_name">
+                
+                <h3>Hindi</h3>
+                  
+                </span>
+              </span>
+              <span class="languages" id="lang_2">
+               <img src="https://i.ibb.co/gmrPQyb/52351011-english-british-england-language-education-concept.jpg" alt="oDzrGc" class="language_image" border="0"> 
+                <span id="lang_name">
+                
+                <h3>English</h3>
+                    
+                </span>
+              </span>
+              <span class="languages" id="lang_3">
+                 <img src="https://i.ibb.co/V06dr9X/951.jpg" alt="oDzrGc" class="language_image" border="0">
+                 <span id="lang_name">
+                
+                <h3>Sanskrit</h3>
+                  
+                </span>
+              </span>
+              
+              <span class="languages" id="lang_4">
+                 <img src="https://i.ibb.co/NZk5h0j/maithili-script.jpg" alt="oDzrGc" class="language_image" border="0">
+                 <span id="language_name">
+                
+                <h3>Maithili</h3>
+                    
+                </span>
+              </span>
+           
+              </div>
+          </div>
+       <!--####### sixth__Page ##########-->
+       
+       
+       <!--####### seventth__Page ##########-->
+       <div class="seventh__page" id="seventh__page">
+           <div class="seventh_heading">
+        <h1>Social Links</h1>
+      </div>
+      <div class="socials_card">
+                      <span class="socials" id="social_1">
+              <img src="https://i.ibb.co/D8R0KQb/1-Waa-Xn-Uvhvrswh-BJSw4-YTu-Q.png" alt="oDzrGc" class="social_image" border="0">
+                <span id="social_name">
+                
+                <h4>Github:<a class="blog_open blog_open_1" onclick="open_git()">Atul1409</a></h4>
+                  
+                </span>
+              </span>
+              <span class="socials" id="social_2">
+               <img src="https://i.ibb.co/zVwrgfW/3c561ae8a8bbf4d8f7c3428e49a92e51-400x400.png" alt="oDzrGc" class="social_image" border="0"> 
+                <span id="social_name">
+                
+                <h4>Sololearn:<a class="blog_open blog_open_1" onclick="open_sl()">Atul🦚</a></h4>
+                    
+                </span>
+              </span>
+              <span class="socials" id="social_3">
+                 <img src="https://i.ibb.co/hCrqfKL/latest-instagram-api-changes.jpg" alt="oDzrGc" class="social_image" border="0">
+                 <span id="social_name">
+                
+                <h4>Instagram:<a class="blog_open blog_open_1" onclick="open_insta()">Atul🦚</a></h4>
+                  
+                </span>
+              </span>
+              
+              <span class="socials" id="social_4">
+                 <img src="https://i.ibb.co/6YWVWdf/tinder-3ee5.png" alt="oDzrGc" class="social_image" border="0">
+                 <span id="social_name">
+                
+                <h4>Tinder:<a class="blog_open blog_open_1" onclick="open_tinder()">Atul🦚</a></h4>
+                    
+                </span>
+              </span>
+           
+              </div>
+       </div>
+       <!--####### seventh__Page ##########-->
+    </div>
+    
+    <!--####### Main-Window ##########-->
+    <script src="script.js"></script>
+</body>
+</html>
